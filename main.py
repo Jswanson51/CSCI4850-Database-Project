@@ -33,7 +33,6 @@ def get_pos_input(num): # Separate function to keep main clean
                 if userInput >= 0:
                     if userInput == 0:
                         clean(con)
-                        break
                     else:
                         return userInput
                 else:
@@ -42,7 +41,6 @@ def get_pos_input(num): # Separate function to keep main clean
                 if userInput >= 0 and userInput <= num:
                     if userInput == 0:
                         clean(con)
-                        break
                     else:
                         return userInput
                 else:
@@ -83,7 +81,7 @@ def query1(cur):
             "select owner_fname, owner_mname, owner_lname, pet_count from (select owner.owner_id, owner.owner_fname, owner.owner_mname, owner.owner_lname, count(pet.pet_id) as pet_count from owner, pet where owner.owner_id = pet.owner_id group by owner.owner_fname, owner.owner_mname, owner.owner_lname) where pet_count > ?",
             (numPets,)):
 
-            print(row)
+        print(row)
 
 def query2(cur):
     print("\t2 Find the average age of all {cats, dogs, birds, hares} served by the veterinary clinic.")
