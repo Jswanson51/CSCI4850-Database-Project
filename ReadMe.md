@@ -24,5 +24,5 @@ Execution Instructions:
     5. Query results will be output after each execution IF any results were
         found. If none, user will see no output.
     
-    6. You are free to query as many time as you like until you enter 0,
+    6. You are free to query as many times you like until you enter 0,
         at which point the program will terminate.

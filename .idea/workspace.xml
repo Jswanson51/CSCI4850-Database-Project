@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="Added a ReadMe.md file.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="Submission version.">
       <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Database\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731272867550</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Submission version.">
+      <option name="closed" value="true" />
+      <created>1731276735603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731276735603</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -157,6 +166,7 @@
     <MESSAGE value="removed mistake a 'break'." />
     <MESSAGE value="Added additional comments." />
     <MESSAGE value="Added a ReadMe.md file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a ReadMe.md file." />
+    <MESSAGE value="Submission version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Submission version." />
   </component>
 </project>
