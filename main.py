@@ -31,7 +31,7 @@ def get_pos_input(num): # Separate function to keep main clean
     # Gather a positive integer from user input. (Ensure it is a positive int)
     while True:
         try:
-            userInput = int(input("Enter a positive integer within the appropriate range: \n"))
+            userInput = int(input("\tEnter a positive integer within the appropriate range: \n"))
             if num == 0:
                 if userInput >= 0:
                     if userInput == 0:
@@ -150,32 +150,34 @@ def main(): # Begin main()
         # Switch statement to match user input (Actions are temporarily print statements to show concept)
         match userInput:
             case 1:
-                print("Execute Query 1\n")
+                print("Execute Query 1")
                 query1(cur)
 
             case 2:
-                print("Execute Query 2\n")
+                print("Execute Query 2")
                 query2(cur)
 
             case 3:
-                print("Execute Query 3\n")
+                print("Execute Query 3")
                 query3(cur)
 
             case 4:
-                print("Execute Query 4\n")
+                print("Execute Query 4")
                 query4(cur)
 
             case 5:
-                print("Execute Query 5\n")
+                print("Execute Query 5")
                 query5(cur)
 
             case 0:
                 break
 
             case _:
-                print("Invalid Entry Try Again.\n")
+                print("Invalid Entry Try Again.")
 
         # Get user's next input (Ensure it is an int)
+        print("\n")
+        queryOptions()
         userInput = get_menu_input()
 
     # close the connection & signify that the program has ended
