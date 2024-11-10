@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="removed mistake a 'break'.">
+    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="Added additional comments.">
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -129,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731269474255</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added additional comments.">
+      <option name="closed" value="true" />
+      <created>1731271297384</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731271297384</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +148,7 @@
     <MESSAGE value="Added db connection. Set example query." />
     <MESSAGE value="Query functions implemented into main()." />
     <MESSAGE value="removed mistake a 'break'." />
-    <option name="LAST_COMMIT_MESSAGE" value="removed mistake a 'break'." />
+    <MESSAGE value="Added additional comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional comments." />
   </component>
 </project>

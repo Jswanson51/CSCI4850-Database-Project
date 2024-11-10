@@ -164,12 +164,14 @@ def main(): # Begin main()
             case 4:
                 print("Execute Query 4\n")
                 query4(cur)
+
             case 5:
                 print("Execute Query 5\n")
                 query5(cur)
 
             case 0:
                 break
+
             case _:
                 print("Invalid Entry Try Again.\n")
 
