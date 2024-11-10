@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="New function get_input. Updated main().">
-      <change afterPath="$PROJECT_DIR$/Swanson_Futakami.db" afterDir="false" />
+    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="Added db connection. Set example query.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -106,12 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731019891969</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added db connection. Set example query.">
+      <option name="closed" value="true" />
+      <created>1731208140743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731208140743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added main()." />
     <MESSAGE value="New function get_input. Updated main()." />
-    <option name="LAST_COMMIT_MESSAGE" value="New function get_input. Updated main()." />
+    <MESSAGE value="Added db connection. Set example query." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added db connection. Set example query." />
   </component>
 </project>
