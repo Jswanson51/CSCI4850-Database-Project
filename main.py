@@ -1,11 +1,14 @@
 import sqlite3 # Imports the SQLite DB Library
 
 def clean(con):
+    # Close the connection
     con.close()
+    # Close the program successfully
     print("Goodbye!")
     exit(0)
 
 def queryOptions():
+    # Print the query options
     print("Select one of the following query options by entering its corresponding number 1-5. You may enter 0 at any time to exit the program.")
     print("\t1 Find the first, middle, and last names of owners who own more than {positive integer} pet(s).")
     print("\t2 Find the average age of all {cats, dogs, birds, hares} served by the veterinary clinic.")
@@ -49,6 +52,7 @@ def get_pos_input(num): # Separate function to keep main clean
             print("Invalid Entry Try Again.\n")
 
 def select_animal():
+    # Helper function to select an animal
     print("\t\t1 Cats")
     print("\t\t2 Dogs")
     print("\t\t3 Birds")
@@ -65,18 +69,16 @@ def select_animal():
 
 
 def select_treatment_prescription():
+    # Helper function
     print("\t\t1 Treatments")
     print("\t\t2 Prescriptions")
     return get_pos_input(2)
 
 
 def query1(cur):
+    # Function gathering input for query 1
     print("\t1 Find the first, middle, and last names of owners who own more than {positive integer} pet(s).")
     numPets = get_pos_input(0)
-
-    test = cur.execute("select owner_fname, owner_mname, owner_lname, pet_count from (select owner.owner_id, owner.owner_fname, owner.owner_mname, owner.owner_lname, count(pet.pet_id) as pet_count from owner, pet where owner.owner_id = pet.owner_id group by owner.owner_fname, owner.owner_mname, owner.owner_lname) where pet_count > ?",
-            (numPets,))
-
     for row in cur.execute(
             "select owner_fname, owner_mname, owner_lname, pet_count from (select owner.owner_id, owner.owner_fname, owner.owner_mname, owner.owner_lname, count(pet.pet_id) as pet_count from owner, pet where owner.owner_id = pet.owner_id group by owner.owner_fname, owner.owner_mname, owner.owner_lname) where pet_count > ?",
             (numPets,)):
@@ -84,6 +86,7 @@ def query1(cur):
         print(row)
 
 def query2(cur):
+    # Function gathering input for query 2
     print("\t2 Find the average age of all {cats, dogs, birds, hares} served by the veterinary clinic.")
     pet1 = select_animal()
     for row in cur.execute("select avg(pet.pet_age) from pet where pet.pet_species = ?", (pet1,)):
@@ -91,6 +94,7 @@ def query2(cur):
 
 
 def query3(cur):
+    # Function gathering input for query 3
     print(
         "\t3 Find the first, middle, and last names of owners who own a {cat, dog, bird, hare} but not a {cat, dog, bird, hare}.")
     pet1 = select_animal()
@@ -102,6 +106,7 @@ def query3(cur):
 
 
 def query4(cur):
+    # Function gathering input for query 4
     print(
         "\t4 Find the first, middle, and last names of salaried employees with a monthly salary of at least ${positive integer}.")
     monthlySalary = get_pos_input(0)
@@ -112,6 +117,7 @@ def query4(cur):
 
 
 def query5(cur):
+    # Function gathering input for query 5
     print("\t5 Find the average cost of {treatments, prescriptions} at the vet clinic.")
     service = select_treatment_prescription()
     if service == 1:

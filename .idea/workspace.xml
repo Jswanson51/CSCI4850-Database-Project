@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="Added db connection. Set example query.">
+    <list default="true" id="7af905fe-8f13-4855-9d6e-4c7db083af56" name="Changes" comment="removed mistake a 'break'.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -113,13 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731208140743</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Query functions implemented into main().">
+      <option name="closed" value="true" />
+      <created>1731269092339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731269092339</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed mistake a 'break'.">
+      <option name="closed" value="true" />
+      <created>1731269474255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731269474255</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added main()." />
     <MESSAGE value="New function get_input. Updated main()." />
     <MESSAGE value="Added db connection. Set example query." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added db connection. Set example query." />
+    <MESSAGE value="Query functions implemented into main()." />
+    <MESSAGE value="removed mistake a 'break'." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed mistake a 'break'." />
   </component>
 </project>
