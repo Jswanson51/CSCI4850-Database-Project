@@ -15,8 +15,13 @@ def get_input(): # Separate function to keep main clean
 
 def main(): # Begin main()
     print("Welcome to the Veterinary Clinic Database")
+
+    # Connect to DB
+    con = sqlite3.connect("Swanson_Futakami.db")
+    cur = con.cursor()
+
     print("Please select from one of the following queries: \n")
-    print(" 1. Query 1\n", "2. Query 2\n", "3. Query 3\n", "4. Query 2\n", "5. Query 2\n", "6. EXIT\n")
+    print(" 1. What are the name of the pets who attend the clinic?\n", "2. Query 2\n", "3. Query 3\n", "4. Query 4\n", "5. Query 5\n", "6. EXIT\n")
 
     # Call for user input
     userInput = get_input()
@@ -30,7 +35,11 @@ def main(): # Begin main()
         # Switch statement to match user input (Actions are temporarily print statements to show concept)
         match userInput:
             case 1:
-                print("Execute Query 1\n")
+                res = cur.execute("SELECT pet_name FROM Pet")
+                result = res.fetchall()
+
+                print("Query Result: ", result, "\n")
+
             case 2:
                 print("Execute Query 2\n")
             case 3:
@@ -47,6 +56,8 @@ def main(): # Begin main()
         # Get user's next input (Ensure it is an int)
         userInput = get_input()
 
+    # close the connection
+    con.close()
     # Signify that the program has ended
     print("Goodbye!")
 
